@@ -1,5 +1,18 @@
 {% if page.comments %}
   <div class="comments" id="comments">
+    <script src="https://giscus.app/client.js"
+            data-repo="haoger1012/haoger1012.github.io"
+            data-repo-id="MDEwOlJlcG9zaXRvcnkyMjA4MTM1MDg="
+            data-category="Announcements"
+            data-category-id="DIC_kwDODSlYxM4B_vf-"
+            data-mapping="pathname"
+            data-reactions-enabled="1"
+            data-emit-metadata="0"
+            data-theme="light"
+            data-lang="en"
+            crossorigin="anonymous"
+            async>
+    </script>
     {% if site.duoshuo and site.duoshuo.shortname or site.duoshuo_shortname %}
       <div class="ds-thread" data-thread-key="{{ page.url | relative_url }}"
            data-title="{{ page.title }}" data-url="{{ page.url | absolute_url }}">
