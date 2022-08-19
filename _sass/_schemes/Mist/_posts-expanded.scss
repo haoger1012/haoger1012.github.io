@@ -22,8 +22,8 @@
     position: relative;
     font-size: $font-size-headings-base;
     font-weight: 400;
-    @include mobile() { font-size: $font-size-headings-smaller; }
-    @include desktop-large() { font-size: $font-size-headings-large; }
+    @include mobile() { font-size: $font-size-headings-base; }
+    @include desktop-large() { font-size: $font-size-headings-base; }
   }
   .post-title:hover:before { background: $black-deep; }
 
@@ -55,8 +55,8 @@
     border-bottom: 2px solid $grey-dim;
     transition-property: border;
 
-    @include mobile() { font-size: $font-size-small; }
-    @include desktop-large() { font-size: $font-size-large; }
+    @include mobile() { font-size: $font-size-base; }
+    @include desktop-large() { font-size: $font-size-base; }
 
 
     &:hover { border-bottom-color: $black-deep; }
